@@ -1,6 +1,15 @@
 const path = require('path')
 
 module.exports = {
+
+  css: {
+    loaderOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
+  
   pluginOptions: {
     'style-resources-loader': {
       preProcessor: 'less',
