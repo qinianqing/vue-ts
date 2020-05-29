@@ -100,9 +100,9 @@ const Promps = {
             name: 'branch',
             message: '请选择本次提交的分支:',
             choices: [
+               'master',
                'dev',
-               'test',
-               'master'
+               'test'
             ]
         }
     ]
