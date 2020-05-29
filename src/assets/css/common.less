@@ -1,0 +1,75 @@
+// 将Chrome 和 Safari 自动填充淡黄色的背景色变成白色
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+}
+
+// 去除Safari小钥匙
+input::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    /* 避免占用 input 元素额外的 padding，正常情况下存在 display: none!; 就可以了 */
+    right: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    font-size: 14px;
+    color: @dark-color;
+    background: @body-bgColor;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    color: #333;
+
+    &:hover {
+        color: #333;
+    }
+
+    &.link {
+        color: @link-color;
+
+        &:hover {
+            color: @warning-color;
+        }
+    }
+
+    &[disabled],
+    &.link[disabled] {
+        color: #ccc;
+    }
+}
+
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
