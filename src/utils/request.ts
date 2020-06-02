@@ -32,7 +32,7 @@ export function axiosAjax(url: string, method?: string, options?: any, notShowEr
   /**
    * 获取接口的base url地址
    * @param apiType  识别配置中key包含apiurl的地址，比如：值为home， 则获取配置信息中的homeApiUrl地址。
-   * @author hzb@jiagouyun.com
+   * @author qinianqing@jiagouyun.com
    */
   function getBaseUrl(apiType?: string) {
     let baseUrl: string = '';
