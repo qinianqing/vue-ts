@@ -38,38 +38,3 @@ body {
     color: @dark-color;
     background: @body-bgColor;
 }
-
-ul {
-    list-style: none;
-}
-
-a {
-    display: inline-block;
-    color: #333;
-
-    &:hover {
-        color: #333;
-    }
-
-    &.link {
-        color: @link-color;
-
-        &:hover {
-            color: @warning-color;
-        }
-    }
-
-    &[disabled],
-    &.link[disabled] {
-        color: #ccc;
-    }
-}
-
-
-.clearfix:after {
-    content: '.';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
