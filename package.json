@@ -9,7 +9,7 @@
     "push": "node ./src/utils/git-commit.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "inquirer": "^7.1.0",
     "shelljs": "^0.8.4",
